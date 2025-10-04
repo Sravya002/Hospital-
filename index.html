@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarePlus Hospital</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Poppins", sans-serif; }
+    body { background: #f5f8fb; color: #333; }
+    header { background: #0066cc; color: white; padding: 20px 50px; text-align: center; }
+    header h1 { font-size: 2em; }
+    nav { margin-top: 10px; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: 500; }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #0066cc, #00aaff);
+      color: white;
+    }
+    .hero h2 { font-size: 2.5em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; margin-bottom: 30px; }
+    .hero button {
+      padding: 12px 25px;
+      background: white;
+      border: none;
+      border-radius: 30px;
+      color: #0066cc;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hero button:hover { background: #e6f0ff; }
+    footer { text-align: center; padding: 20px; background: #0066cc; color: white; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CarePlus Hospital</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="form.html">Book Appointment</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Your Health, Our Priority</h2>
+    <p>Providing world-class medical care with compassion and expertise.</p>
+    <button onclick="goToForm()">Book Appointment</button>
+  </section>
+
+  <footer>
+    &copy; 2025 CarePlus Hospital. All Rights Reserved.
+  </footer>
+
+  <script>
+    function goToForm() {
+      window.location.href = "form.html";
+    }
+  </script>
+</body>
+</html>
